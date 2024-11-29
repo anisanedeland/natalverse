@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url("/fonts/AvaleighReguler.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "CustomFont", sans-serif;
+    color: #ff4500; /* Same as inline style */
+    font-size: 48px;
+    text-align: center; /* Center the title */
+}
+
+body {
+    font-family: "CustomFont", sans-serif; /* Apply to the whole page */
+}
+
+button {
+    font-family: "CustomFont", sans-serif; /* Ensure buttons use the custom font */
+}
