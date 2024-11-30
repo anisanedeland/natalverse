@@ -109,7 +109,7 @@ export default function Home() {
       {isFirstVisit ? (
         <form onSubmit={handleNameSubmit} style={{ margin: "20px 0" }}>
           <label htmlFor="name" style={{ fontSize: "18px", color: "#ffd041" }}>
-            Enter your name:
+            Namac
           </label>
           <br />
           <input
@@ -136,7 +136,7 @@ export default function Home() {
             }}
           >
             <ReskinnedButton
-              text="Save Name"
+              text="Enter"
               onClick={handleNameSubmit}
               style={{
                 backgroundColor: "#ff4500",
