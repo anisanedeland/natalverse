@@ -83,27 +83,32 @@ export default function Home() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "150px",
+          height: "100px",
           width: "100%",
           marginBottom: "20px",
-          marginTop: "40px",
+          marginTop: "80px",
         }}
       ></div>
-      <h1
+
+      <div
         style={{
-          fontFamily: "Avaleigh, sans-serif",
-          textAlign: "center",
-          padding: "20px",
-          color: "#d7a528",
-          fontSize: "48px",
+          backgroundImage: "url('/img/TITLE.png')",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "250px",
+          width: "100%",
+          marginBottom: "10px",
+          marginTop: "10px",
         }}
-      >
-        You Are Precious
-      </h1>
+      ></div>
 
       {isFirstVisit ? (
         <form onSubmit={handleNameSubmit} style={{ margin: "20px 0" }}>
-          <label htmlFor="name" style={{ fontSize: "18px", color: "#ff4500" }}>
+          <label htmlFor="name" style={{ fontSize: "18px", color: "#ffd041" }}>
             Enter your name:
           </label>
           <br />
@@ -135,7 +140,7 @@ export default function Home() {
               onClick={handleNameSubmit}
               style={{
                 backgroundColor: "#ff4500",
-                color: "#fff",
+                color: "#ffd041",
                 marginTop: "20px",
               }}
             />
@@ -149,15 +154,15 @@ export default function Home() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              marginTop: "20px",
+              marginTop: "10px",
             }}
           >
             <ReskinnedButton
-              text={loading ? "Loading..." : "Get a Random Verse"}
+              text={loading ? "Ditunggu Ya!!!" : "Click Me!"}
               onClick={getRandomVerse}
               style={{
                 backgroundColor: isButtonDisabled ? "#ccc" : "#ff4500",
-                color: "#fff",
+                color: "#ffd041",
                 cursor: isButtonDisabled ? "not-allowed" : "pointer",
               }}
               disabled={isButtonDisabled}
