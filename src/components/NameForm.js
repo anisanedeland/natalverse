@@ -11,7 +11,7 @@ export default function NameForm({ onSubmit }) {
 
   return (
     <form onSubmit={handleSubmit} style={{ margin: "20px 0" }}>
-      <label htmlFor="name" style={{ fontSize: "18px", color: "#ff4500" }}>
+      <label htmlFor="name" style={{ fontSize: "18px", color: "#ffd041" }}>
         Enter your name:
       </label>
       <br />
@@ -34,7 +34,7 @@ export default function NameForm({ onSubmit }) {
         style={{
           padding: "10px 20px",
           fontSize: "16px",
-          backgroundColor: "#F03328",
+          backgroundColor: "#ffd041",
           color: "white",
           border: "none",
           borderRadius: "5px",
