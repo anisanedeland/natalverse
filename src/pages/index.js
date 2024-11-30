@@ -104,7 +104,7 @@ export default function Home() {
       {isFirstVisit ? (
         <form onSubmit={handleNameSubmit} style={{ margin: "20px 0" }}>
           <label htmlFor="name" style={{ fontSize: "18px", color: "#ff4500" }}>
-            Enter your name:
+            Masukkan Nama:
           </label>
           <br />
           <input
@@ -131,7 +131,7 @@ export default function Home() {
             }}
           >
             <ReskinnedButton
-              text="Save Name"
+              text="Enter"
               onClick={handleNameSubmit}
               style={{
                 backgroundColor: "#ff4500",
@@ -153,7 +153,7 @@ export default function Home() {
             }}
           >
             <ReskinnedButton
-              text={loading ? "Loading..." : "Get a Random Verse"}
+              text={loading ? "Ditunggu dulu ya :)" : "Christmas Verse"}
               onClick={getRandomVerse}
               style={{
                 backgroundColor: isButtonDisabled ? "#ccc" : "#ff4500",
