@@ -64,7 +64,7 @@ export default function Home() {
     <div
       style={{
         textAlign: "center",
-        padding: "50px",
+        padding: "20px",
         minHeight: "100vh",
         margin: 0,
         backgroundColor: "#0d0d0d",
@@ -83,10 +83,10 @@ export default function Home() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "100px",
+          height: "80px",
           width: "100%",
           marginBottom: "20px",
-          marginTop: "80px",
+          marginTop: "120px",
         }}
       ></div>
 
@@ -99,7 +99,7 @@ export default function Home() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "250px",
+          height: "180px",
           width: "100%",
           marginBottom: "10px",
           marginTop: "10px",
