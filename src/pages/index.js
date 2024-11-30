@@ -105,16 +105,13 @@ export default function Home() {
           marginTop: "10px",
         }}
       ></div>
-
       {isFirstVisit ? (
         <form onSubmit={handleNameSubmit} style={{ margin: "20px 0" }}>
-          <label htmlFor="name" style={{ fontSize: "18px", color: "#ffd041" }}>
-            Name
-          </label>
           <br />
           <input
             id="name"
             type="text"
+            placeholder="Name"
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
             style={{
@@ -142,6 +139,7 @@ export default function Home() {
                 backgroundColor: "#ff4500",
                 color: "#ffd041",
                 marginTop: "20px",
+                fontSize: "20px",
               }}
             />
           </div>
