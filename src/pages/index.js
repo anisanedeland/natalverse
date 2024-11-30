@@ -77,15 +77,15 @@ export default function Home() {
       <div
         style={{
           backgroundImage: "url('/img/aog_white.png')",
-          backgroundSize: "contain", // Ensures the logo fits within the div
+          backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "150px", // Adjust height to fit the logo size
-          width: "100%", // Ensures it spans the full width of the container
-          marginBottom: "20px", // Adds spacing below the logo
+          height: "150px",
+          width: "100%",
+          marginBottom: "20px",
           marginTop: "40px",
         }}
       ></div>
@@ -104,7 +104,7 @@ export default function Home() {
       {isFirstVisit ? (
         <form onSubmit={handleNameSubmit} style={{ margin: "20px 0" }}>
           <label htmlFor="name" style={{ fontSize: "18px", color: "#ff4500" }}>
-            Masukkan Nama:
+            Enter your name:
           </label>
           <br />
           <input
@@ -131,7 +131,7 @@ export default function Home() {
             }}
           >
             <ReskinnedButton
-              text="Enter"
+              text="Save Name"
               onClick={handleNameSubmit}
               style={{
                 backgroundColor: "#ff4500",
@@ -153,7 +153,7 @@ export default function Home() {
             }}
           >
             <ReskinnedButton
-              text={loading ? "Ditunggu dulu ya :)" : "Christmas Verse"}
+              text={loading ? "Loading..." : "Get a Random Verse"}
               onClick={getRandomVerse}
               style={{
                 backgroundColor: isButtonDisabled ? "#ccc" : "#ff4500",

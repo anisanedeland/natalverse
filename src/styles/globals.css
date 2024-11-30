@@ -1,9 +1,11 @@
 @font-face {
     font-family: "CustomFont";
-    src: url("/fonts/AvaleighReguler.ttf") format("truetype");
+    src: url("/fonts/AvaleighRegular.woff2") format("woff2"),
+         url("/fonts/AvaleighRegular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
+
 
 h1 {
     font-family: "CustomFont", sans-serif;
